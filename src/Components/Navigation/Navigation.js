@@ -1,13 +1,16 @@
 import React from "react";
 
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function Navigation() {
   const [navbar, setNavbar] = useState(false);
+  let activeStyle = {
+    color: "red",
+  };
 
   return (
-    <nav className="w-full bg-indigo-500 shadow">
+    <nav className="w-full bg-indigo-300 hover:bg-indigo-400 hover:shadow-lg  hover:shadow-gray-500 shadow">
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
@@ -58,18 +61,34 @@ export default function Navigation() {
             }`}
           >
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-              <Link to="/home" className="text-white hover:text-indigo-200">
+              <NavLink
+                to="/home"
+                style={({ isActive }) => (isActive ? activeStyle : undefined)}
+                className="text-white font-semibold hover:text-red-300"
+              >
                 Home
-              </Link>
-              <Link to="login" className="text-white hover:text-indigo-200">
+              </NavLink>
+              <NavLink
+                to="login"
+                style={({ isActive }) => (isActive ? activeStyle : undefined)}
+                className="text-whitefont-semibold hover:text-red-300"
+              >
                 Login
-              </Link>
-              <Link to="/game" className="text-white hover:text-indigo-200">
+              </NavLink>
+              <NavLink
+                to="/game"
+                style={({ isActive }) => (isActive ? activeStyle : undefined)}
+                className="text-white font-semibold hover:text-red-300"
+              >
                 Game
-              </Link>
-              <Link to="/blog" className="text-white hover:text-indigo-200">
+              </NavLink>
+              <NavLink
+                to="/blog"
+                style={({ isActive }) => (isActive ? activeStyle : undefined)}
+                className="text-white font-semibold hover:text-red-300"
+              >
                 Blog
-              </Link>
+              </NavLink>
             </ul>
           </div>
         </div>
