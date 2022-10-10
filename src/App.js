@@ -6,6 +6,7 @@ import Home from "./Components/Home/Home";
 import Game from "./Components/Game/Game";
 import Blog from "./Components/Blog/Blog";
 import ErrorPage from "./Components/ErrorPage/ErrorPage";
+import Ques from "./Components/Ques/Ques";
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,15 @@ const router = createBrowserRouter([
       {
         path: "/blog",
         element: <Blog></Blog>,
+      },
+      {
+        path: "game/topic/:id",
+        loader: async ({ params }) => {
+          return fetch(
+            `https://openapi.programming-hero.com/api/quiz/${params.id}`
+          );
+        },
+        element: <Ques></Ques>,
       },
     ],
   },

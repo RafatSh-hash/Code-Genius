@@ -2,9 +2,9 @@ import React from "react";
 
 const Blog = () => {
   return (
-    <div className="bg-gray-200 p-5 mt-0">
+    <div className="bg-gradient-to-l from-sky-400 via-cyan-100  p-5 mt-0">
       {/* <h1>Hello Blog</h1> */}
-      <div className="border-2 border-slate-400 rounded-2xl p-4 text-left w-4/6 mx-auto mt-10">
+      <div className="border-2 border-slate-400 shadow-gray-600 shadow-lg rounded-2xl p-4 text-left w-4/6 mx-auto mt-10">
         <h3 className="font-semibold ">
           Ques : What is the purpose of
           <span className="text-red-500"> React Router</span>?
@@ -29,7 +29,7 @@ const Blog = () => {
           user will be redirected to that particular route.
         </p>
       </div>
-      <div className="border-2 border-slate-400 rounded-2xl p-4 text-left w-4/6 mx-auto mt-10">
+      <div className="border-2 border-slate-400 shadow-gray-600 shadow-lg rounded-2xl p-4 text-left w-4/6 mx-auto mt-10">
         <h3 className="font-semibold ">
           Ques : How does
           <span className="text-red-500"> Context API</span> work ?
@@ -51,7 +51,7 @@ const Blog = () => {
           page.
         </p>
       </div>
-      <div className="border-2 border-slate-400 rounded-2xl p-4 text-left w-4/6 mx-auto mt-10">
+      <div className="border-2 border-slate-400 shadow-gray-600 shadow-lg rounded-2xl p-4 text-left w-4/6 mx-auto mt-10">
         <h3 className="font-semibold ">
           Ques : What are the usage of
           <span className="text-red-500"> useRef Hook </span>?
