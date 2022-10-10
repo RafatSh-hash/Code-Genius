@@ -61,11 +61,11 @@ export default function Navigation() {
               <Link to="/home" className="text-white hover:text-indigo-200">
                 Home
               </Link>
-              <Link to="/login" className="text-white hover:text-indigo-200">
+              <Link to="login" className="text-white hover:text-indigo-200">
                 Login
               </Link>
-              <Link to="/tests" className="text-white hover:text-indigo-200">
-                Tests
+              <Link to="/game" className="text-white hover:text-indigo-200">
+                Game
               </Link>
               <Link to="/blog" className="text-white hover:text-indigo-200">
                 Blog
