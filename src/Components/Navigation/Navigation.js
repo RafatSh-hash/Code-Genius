@@ -71,7 +71,7 @@ export default function Navigation() {
               <NavLink
                 to="login"
                 style={({ isActive }) => (isActive ? activeStyle : undefined)}
-                className="text-whitefont-semibold hover:text-red-300"
+                className=" text-white font-semibold hover:text-red-300"
               >
                 Login
               </NavLink>
