@@ -16,6 +16,8 @@ const Que = ({ que }) => {
       const newPoint = point + 1;
       setPoint(newPoint);
       Swal.fire("Correct Answer!!!");
+    } else {
+      Swal.fire("Incorrect Answer!!!");
     }
   };
 
