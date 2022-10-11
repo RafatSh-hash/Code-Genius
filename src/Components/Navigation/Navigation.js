@@ -64,35 +64,35 @@ export default function Navigation() {
               <NavLink
                 to="/home"
                 style={({ isActive }) => (isActive ? activeStyle : undefined)}
-                className="text-white font-semibold hover:text-red-300"
+                className="text-white font-semibold ml-7 hover:text-red-300"
               >
                 Home
               </NavLink>
               <NavLink
                 to="login"
                 style={({ isActive }) => (isActive ? activeStyle : undefined)}
-                className=" text-white font-semibold hover:text-red-300"
+                className=" text-white font-semibold ml-7 hover:text-red-300"
               >
                 Login
               </NavLink>
               <NavLink
                 to="/game"
                 style={({ isActive }) => (isActive ? activeStyle : undefined)}
-                className="text-white font-semibold hover:text-red-300"
+                className="text-white font-semibold ml-7 hover:text-red-300"
               >
                 Game
               </NavLink>
               <NavLink
                 to="/blog"
                 style={({ isActive }) => (isActive ? activeStyle : undefined)}
-                className="text-white font-semibold hover:text-red-300"
+                className="text-white font-semibold ml-7 hover:text-red-300"
               >
                 Blog
               </NavLink>
               <NavLink
                 to="/chart"
                 style={({ isActive }) => (isActive ? activeStyle : undefined)}
-                className="text-white font-semibold hover:text-red-300"
+                className="text-white font-semibold ml-7 hover:text-red-300"
               >
                 Test Summary
               </NavLink>
