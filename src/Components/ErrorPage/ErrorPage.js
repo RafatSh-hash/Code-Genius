@@ -9,9 +9,11 @@ const ErrorPage = () => {
       <div className="anime">
         <Lottie animationData={err} loop={true}></Lottie>
       </div>
-      <Link className="link" to="/home">
-        Back To Home
-      </Link>
+      <div className="w-40 mx-auto">
+        <Link className="link" to="/home">
+          Back To Home
+        </Link>
+      </div>
     </div>
   );
 };
