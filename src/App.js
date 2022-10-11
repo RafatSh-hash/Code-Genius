@@ -7,6 +7,7 @@ import Game from "./Components/Game/Game";
 import Blog from "./Components/Blog/Blog";
 import ErrorPage from "./Components/ErrorPage/ErrorPage";
 import Ques from "./Components/Ques/Ques";
+import Chart from "./Components/Chart/Chart";
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: "/blog",
         element: <Blog></Blog>,
+      },
+      {
+        path: "/chart",
+        element: <Chart></Chart>,
       },
       {
         path: "game/topic/:id",

@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye } from "@fortawesome/free-solid-svg-icons";
 import { ToastContainer, toast } from "react-toastify";
@@ -9,7 +9,6 @@ import { ScoreContext } from "../Ques/Ques";
 const Que = ({ que }) => {
   const { question, options, correctAnswer } = que;
   const [point, setPoint] = useContext(ScoreContext);
-  //   const [point, setPoint] = useState(0);
   const notify = () => toast(correctAnswer);
   const onChangeValue = (e) => {
     const selected = e.target.value;
@@ -19,6 +18,7 @@ const Que = ({ que }) => {
       Swal.fire("Correct Answer!!!");
     }
   };
+
   return (
     <div className="flex">
       <div className="lg:w-full h-66 md:w-1/2 sm:w-full lg:mx-5  leading-9 shadow-gray-600 shadow-lg mt-10 border-2 border-slate-500 p-4 rounded-2xl">

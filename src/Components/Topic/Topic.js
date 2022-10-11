@@ -1,10 +1,13 @@
-import React from "react";
+import React, { createContext } from "react";
 import { Link } from "react-router-dom";
 
+export const totalContext = createContext();
 const Topic = ({ topic }) => {
   const { id, name, logo, total } = topic;
+  console.log(total);
   return (
     <div>
+      <totalContext.Provider value={total}></totalContext.Provider>
       <div className="lg:w-72 lg:h-88 mx-5 sm:h-88 sm:w-full sm:my-5 shadow-xl shadow-gray-700 border-2 border-black bg-gradient-to-r from-cyan-300 via-slate-300 flex flex-col justify-center rounded-3xl p-10">
         <div>
           <img className="h-[80%]" src={logo} alt="" />

@@ -89,6 +89,13 @@ export default function Navigation() {
               >
                 Blog
               </NavLink>
+              <NavLink
+                to="/chart"
+                style={({ isActive }) => (isActive ? activeStyle : undefined)}
+                className="text-white font-semibold hover:text-red-300"
+              >
+                Test Summary
+              </NavLink>
             </ul>
           </div>
         </div>
