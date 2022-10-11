@@ -43,10 +43,10 @@ const Chart = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-l from-sky-400 via-cyan-100 to-sky-300 p-20">
-      <div className="mx-auto w-1/2 bg-slate-300 rounded-2xl p-5">
+    <div className="  bg-gradient-to-l from-sky-400 via-cyan-100 to-sky-300 p-20">
+      <div className="lg:w-1/2 mx-auto bg-slate-300 rounded-2xl p-5 shadow-xl shadow-gray-500">
         <LineChart
-          width={600}
+          width={500}
           height={400}
           data={dataC}
           margin={{

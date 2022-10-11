@@ -22,7 +22,7 @@ const Login = () => {
           placeholder="password"
         />
         <div className="mt-4">
-          <button className="px-3 mx-auto py-2 border-2 border-black font-link text-white font-semibold bg-blue-400 hover:bg-blue-600 rounded-lg">
+          <button className="px-3 mx-20 py-2 border-2 border-black font-link text-white font-semibold bg-blue-400 hover:bg-blue-600 rounded-lg">
             <Link to="/home">Login</Link>
           </button>
         </div>

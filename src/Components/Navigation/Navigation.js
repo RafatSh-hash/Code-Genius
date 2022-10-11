@@ -14,7 +14,9 @@ export default function Navigation() {
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
-            <h2 className="text-2xl font-bold text-white">{n}</h2>
+            <h2 className="text-2xl font-bold hover:text-red-500 text-white">
+              {n}
+            </h2>
 
             <div className="md:hidden">
               <button
@@ -68,13 +70,7 @@ export default function Navigation() {
               >
                 Home
               </NavLink>
-              <NavLink
-                to="login"
-                style={({ isActive }) => (isActive ? activeStyle : undefined)}
-                className=" text-white font-semibold ml-7 hover:text-red-300"
-              >
-                Login
-              </NavLink>
+
               <NavLink
                 to="/game"
                 style={({ isActive }) => (isActive ? activeStyle : undefined)}
@@ -95,6 +91,13 @@ export default function Navigation() {
                 className="text-white font-semibold ml-7 hover:text-red-300"
               >
                 Test Summary
+              </NavLink>
+              <NavLink
+                to="login"
+                style={({ isActive }) => (isActive ? activeStyle : undefined)}
+                className=" text-white font-semibold ml-7 hover:text-red-300"
+              >
+                Login
               </NavLink>
             </ul>
           </div>
