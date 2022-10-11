@@ -13,7 +13,7 @@ const Home = () => {
           </h1>
           <p className="text-right text-red-600 mx-5 mb-10">-Jhankar Mahbub</p>
           <Link
-            className="bg-blue-400 mt-20 lg:text-left lg:w-10 sm:w-10 sm:mx-auto sm:text-center  px-3 py-2 rounded-lg hover:shadow-lg hover:shadow-gray-500 text-white font-bold hover:bg-blue-600"
+            className="bg-blue-500 mt-20 lg:text-left lg:w-10 sm:w-10 sm:mx-auto sm:text-center  px-3 py-2 rounded-lg hover:shadow-lg border-2 border-black hover:shadow-gray-500 text-white font-bold hover:bg-blue-600"
             to="/game"
           >
             Take A Test

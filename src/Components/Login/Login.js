@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
-    <div className="bg-gradient-to-l from-sky-400 via-cyan-100 w-full h-full p-3.5">
+    <div className="bg-gradient-to-l from-sky-400 via-cyan-200 w-full h-full p-3.5">
       <div className="border-2 border-black bg-white shadow-lg shadow-gray-700 rounded-3xl w-72 h-88 p-6 mx-auto mb-32 mt-32 justify-center items-center">
         <h3 className="font-semibold text-2xl font-link text-center">
           Enter User Name

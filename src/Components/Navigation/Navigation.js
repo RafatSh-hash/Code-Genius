@@ -10,7 +10,7 @@ export default function Navigation() {
   };
   const n = "<>Code Genius</>";
   return (
-    <nav className="w-full bg-indigo-300 hover:bg-indigo-400 hover:shadow-lg  hover:shadow-gray-500 shadow">
+    <nav className="w-full bg-indigo-500 hover:bg-indigo-600 hover:shadow-lg  hover:shadow-gray-500 shadow">
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
