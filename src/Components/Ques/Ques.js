@@ -43,8 +43,8 @@ const Ques = () => {
   return (
     <chartContext.Provider value={chartData}>
       <ScoreContext.Provider value={[point, setPoint]}>
-        <div className="lg:flex lg:flex-row sm:flex sm:justify-center sm:flex-col-reverse p-5 bg-gradient-to-r from-sky-300 via-cyan-200">
-          <div className="lg:w-[80%] md:w-full sm:w-full">
+        <div className="lg:flex lg:flex-row sm:flex sm:justify-center sm:flex-col-reverse sm:gap-3 p-5 h-full w-full bg-gradient-to-r from-sky-300 via-cyan-200">
+          <div className="lg:w-[80%] md:w-full sm:w-full sm:mt-10">
             <p className="font-bold text-xl text-center">{topic.name}</p>
             {ques.map((que) => (
               <Que key={que.id} que={que}></Que>

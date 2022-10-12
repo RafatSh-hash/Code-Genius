@@ -68,9 +68,6 @@ const Chart = () => {
             activeDot={{ r: 8 }}
           />
         </LineChart>
-        <h2 className="font-bold text-center">
-          The chart above shows the number of questions per topic
-        </h2>
       </div>
     </div>
   );
