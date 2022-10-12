@@ -18,7 +18,7 @@ const Login = () => {
           Enter Password
         </h3>
         <input
-          className="rounded-lg mx-3 mt-4 p-2"
+          className="rounded-lg w-full mx-3 mt-4 p-2"
           type="password"
           placeholder="password"
         />
