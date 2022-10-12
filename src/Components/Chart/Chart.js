@@ -43,8 +43,8 @@ const Chart = () => {
   ];
 
   return (
-    <div className="  bg-gradient-to-l from-sky-400 via-cyan-100 to-sky-300 p-20">
-      <div className="lg:w-1/2 mx-auto bg-slate-300 rounded-2xl p-5 shadow-xl shadow-gray-500">
+    <div className="   p-20">
+      <div className="lg:w-1/2 sm: hidden lg:block md:block mx-auto bg-slate-300 rounded-2xl p-5 shadow-xl shadow-gray-500">
         <LineChart
           width={500}
           height={400}
@@ -53,6 +53,35 @@ const Chart = () => {
             top: 5,
             right: 30,
             left: 20,
+            bottom: 5,
+          }}
+        >
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="Name" />
+          <YAxis dataKey="Amt" />
+          <Tooltip />
+          <Legend />
+          <Line
+            type="monotone"
+            dataKey="Total"
+            stroke="#ff0000"
+            activeDot={{ r: 8 }}
+          />
+        </LineChart>
+        <h1 className="font-semibold text-center">
+          This chart shows the quiz numbers in total.
+        </h1>
+      </div>
+
+      <div className="lg:w-1/2 lg:hidden md:hidden sm:block my-10 mx-auto bg-slate-300 rounded-2xl shadow-xl shadow-gray-500">
+        <LineChart
+          width={250}
+          height={150}
+          data={dataC}
+          margin={{
+            top: 5,
+            right: 0,
+            left: 0,
             bottom: 5,
           }}
         >

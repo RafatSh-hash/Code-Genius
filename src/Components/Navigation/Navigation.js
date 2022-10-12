@@ -62,7 +62,7 @@ export default function Navigation() {
               navbar ? "block" : "hidden"
             }`}
           >
-            <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+            <ul className="items-center justify-center space-y-8 md:flex-col md:space-x-6 md:space-y-0">
               <NavLink
                 to="/home"
                 style={({ isActive }) => (isActive ? activeStyle : undefined)}
@@ -90,7 +90,7 @@ export default function Navigation() {
                 style={({ isActive }) => (isActive ? activeStyle : undefined)}
                 className="text-white font-semibold ml-7 hover:text-red-300"
               >
-                Test Summary
+                Summary
               </NavLink>
               <NavLink
                 to="login"
