@@ -6,7 +6,7 @@ const Topic = ({ topic }) => {
   const { id, name, logo, total } = topic;
   console.log(total);
   return (
-    <div className="sm: mb-10">
+    <div className="lg:mx-1 sm: mb-10 md:mx-3 ">
       <totalContext.Provider value={total}></totalContext.Provider>
       <div className="lg:w-72 lg:h-88 mx-5 sm:h-88 sm:w-full sm:my-5 shadow-xl shadow-gray-700 border-2 border-black bg-gradient-to-r from-cyan-300 via-slate-300 flex flex-col justify-center rounded-3xl p-10">
         <div>
